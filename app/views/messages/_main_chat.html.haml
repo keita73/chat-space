@@ -1,0 +1,52 @@
+
+.Main
+  .Main__Header
+    .Main__Header__Groups
+      .Main__Header__Groups__Name
+        test
+        %ul.Main__Header__Groups__MemberList
+          Menber : 
+          %li.Main__Header__Groups__Menber
+          keita
+      .Main__Header__Groups__Button
+        = link_to "EDIT","#" 
+
+  .Main__Chat
+    .Main__Chat__Box
+      .Main__Chat__Box__User
+        .Main__Chat__Box__User__Name
+          keita
+        .Main__Chat__Box__User__Date
+          2020/07/09(Fri) 17:43:01
+      .Main__Chat__Box__Message
+        .Main__Chat__Box__Message__Content
+          おはよう！
+
+    .Main__Chat__Box
+      .Main__Chat__Box__User
+        .Main__Chat__Box__User__Name
+          keita
+        .Main__Chat__Box__User__Date
+          2020/07/09(Fri) 17:43:01
+      .Main__Chat__Box__Message
+        .Main__Chat__Box__Message__Content
+          おはよう！
+
+    .Main__Chat__Box
+      .Main__Chat__Box__User
+        .Main__Chat__Box__User__Name
+          keita
+        .Main__Chat__Box__User__Date
+          2020/07/09(Fri) 17:43:01
+      .Main__Chat__Box__Message
+        .Main__Chat__Box__Message__Content
+          おはよう！
+
+  .Main__From
+    %from.from_box
+      .input-box
+        %input{type: "textarea", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon("fas", "image")
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "SEND",class: "submit-btn"}
