@@ -3,11 +3,11 @@
     .Sidebar__Header__Box
       %p.Sidebar__Header__Box__UserName 
         = current_user.name
-      %ul.Sidebar__Header__Box__IconList
-        %li.Sidebar__Header__Box__new-user
-          = link_to "#" do
-            = icon('fas', 'edit',)
-        %li.Sidebar__Header__Box__edit-group
+      %ul.LeftHeader__iconList
+        %li.LeftHeader__Icon
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.LeftHeader__Icon
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .Sidebar__Groups
