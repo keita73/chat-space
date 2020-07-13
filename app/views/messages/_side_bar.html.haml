@@ -5,24 +5,32 @@
         = current_user.name
       %ul.LeftHeader__iconList
         %li.LeftHeader__Icon
-          = link_to '#' do
+          = link_to 'groups/new' do
             = icon('fas', 'edit')
         %li.LeftHeader__Icon
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .Sidebar__Groups
-    .Sidebar__Groups__Group
-      .Sidebar__Groups__Group__Name
-        techcamp
-      .Sidebar__Groups__Group__Message
-        まだメッセージはありません
-    .Sidebar__Groups__Group
-      .Sidebar__Groups__Group__Name
-        techcamp
-      .Sidebar__Groups__Group__Message
-        まだメッセージはありません
-    .Sidebar__Groups__Group
-      .Sidebar__Groups__Group__Name
-        techcamp
-      .Sidebar__Groups__Group__Message
-        まだメッセージはありません
+    -# .Sidebar__Groups__Group
+    -#   .Sidebar__Groups__Group__Name
+    -#     techcamp
+    -#   .Sidebar__Groups__Group__Message
+    -#     まだメッセージはありません
+    -# .Sidebar__Groups__Group
+    -#   .Sidebar__Groups__Group__Name
+    -#     techcamp
+    -#   .Sidebar__Groups__Group__Message
+    -#     まだメッセージはありません
+    -# .Sidebar__Groups__Group
+    -#   .Sidebar__Groups__Group__Name
+    -#     techcamp
+    -#   .Sidebar__Groups__Group__Message
+    -#     まだメッセージはありません
+    
+    - current_user.groups.each do |group|
+      .Sider__groups__Group
+        = link_to '/' do
+          .Sider__groups__Group__Name
+            = group.name
+          .Sider__groups__Group__Message
+            メッセージはまだありません
