@@ -61,6 +61,7 @@
       height: calc(100vh - 190px);
       display: block;
       padding: 35px 0px 0px 40px;
+      overflow: scroll;
 
       &__Box {
         padding-bottom: 46px;
@@ -90,40 +91,40 @@
       }
     }
 
-    &__From {
+    .Footer {
       background-color: #d2d2d2;
       height: 90px;
       padding: 20px 40px;
 
-      .from_box {
+      .Form {
         display: flex;
         justify-content: space-between;
 
-        .input-box {
+        &__contents {
           background-color: #ffffff;
           width: 100%;
           display: flex;
 
-          &__text {
+          .Form__inputContent {
             height: 50px;
             width: 100%;
             padding: 0 10px;
             border-style: none;
           }
 
-          &__image {
+          .Form__inputImage {
             position: relative;
             right: 10px;
             top: 10px;
 
-            &__file {
+            .Hidden {
               position: absolute;
               display: none;
             }
           }
         }
 
-        .submit-btn {
+        &__submit {
           background-color: #38aef0;
           color: #fff;
           font-size: 16px;
@@ -184,18 +185,17 @@
       a {
         color: #ffffff;
         text-decoration: none;
+      }
+      &__Group {
+        padding: 20px 0px 40px;
 
-        &__Group {
-          padding: 20px 0px 40px;
+        &__Name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
 
-          &__Name {
-            font-size: 15px;
-            margin-bottom: 5px;
-          }
-
-          &__Message {
-            font-size: 11px;
-          }
+        &__Message {
+          font-size: 11px;
         }
       }
     }

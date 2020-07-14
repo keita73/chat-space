@@ -28,9 +28,9 @@
     -#     まだメッセージはありません
     
     - current_user.groups.each do |group|
-      .Sider__groups__Group
-        = link_to '/' do
-          .Sider__groups__Group__Name
+      .Sidebar__Groups__Group
+        = link_to group_messages_path(group) do
+          .Sidebar__Groups__Group__Name
             = group.name
-          .Sider__groups__Group__Message
-            メッセージはまだありません
+          .Sidebar__Groups__Group__Message
+            = group.show_last_message
