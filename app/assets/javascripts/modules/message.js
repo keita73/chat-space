@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="Main__Chat__Box">
+        `<div class="Main__Chat__Box" data-message-id=${message.id}>
           <div class="Main__Chat__Box__User">
             <div class="Main__Chat__Box__User__Name">
               ${message.user_name}
@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="Main__Chat__Box">
+        `<div class="Main__Chat__Box" data-message-id=${message.id}>
           <div class="Main__Chat__Box__User">
             <div class="Main__Chat__Box__User__Name">
               ${message.user_name}
@@ -32,11 +32,11 @@ $(function(){
           </div>
           <div class="Main__Chat__Box__Message">
             <p class="Main__Chat__Box__Message__Content">
-            ${message.content}
-          </p>
-        </div>
-      </div>`
-      return html;
+              ${message.content}
+            </p>
+          </div>
+        </div>`
+        return html;
     };
   }
   $('.Form').on('submit', function(e){
