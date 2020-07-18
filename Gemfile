@@ -61,6 +61,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+<<<<<<< Updated upstream
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 
@@ -75,3 +76,6 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
 end
+=======
+gem 'fog-aws'
+>>>>>>> Stashed changes
