@@ -318,9 +318,7 @@ DEPENDENCIES
 <<<<<<< Updated upstream
   unicorn (= 5.4.1)
   web-console (>= 3.3.0)
-=======
-  web-console
->>>>>>> Stashed changes
+
   webdrivers
   webpacker (~> 4.0)
 
