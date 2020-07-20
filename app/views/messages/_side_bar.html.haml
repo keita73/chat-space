@@ -11,21 +11,6 @@
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
   .Sidebar__Groups
-    -# .Sidebar__Groups__Group
-    -#   .Sidebar__Groups__Group__Name
-    -#     techcamp
-    -#   .Sidebar__Groups__Group__Message
-    -#     まだメッセージはありません
-    -# .Sidebar__Groups__Group
-    -#   .Sidebar__Groups__Group__Name
-    -#     techcamp
-    -#   .Sidebar__Groups__Group__Message
-    -#     まだメッセージはありません
-    -# .Sidebar__Groups__Group
-    -#   .Sidebar__Groups__Group__Name
-    -#     techcamp
-    -#   .Sidebar__Groups__Group__Message
-    -#     まだメッセージはありません
     
     - current_user.groups.each do |group|
       .Sidebar__Groups__Group
