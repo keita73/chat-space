@@ -1,5 +1,5 @@
 
-.Main__Chat__Box 
+.Main__Chat__Box{data: {message: {id: message.id}}}
   .Main__Chat__Box__User
     .Main__Chat__Box__User__Name
       = message.user.name
@@ -9,5 +9,4 @@
     - if message.content.present?
       %p.Main__Chat__Box__Message__Content
         = message.content
-    = image_tag message.image.url, class: 'Main__Chat__Box__Message__image' if message.image.present?.Main__Chat__Box{data: {message: {id: message.id}}}
- 
+    = image_tag message.image.url, class: 'Main__Chat__Box__Message__image' if message.image.present?
